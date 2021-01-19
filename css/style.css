@@ -1,0 +1,126 @@
+:root {
+    --first-color: rgb(217, 0, 18);
+    --first-alpha-color: rgba(217, 0, 18, 0.75);
+    --second-color: rgb(20, 25, 45);
+    --second-alpha-color: rgba(20, 25, 45, 0.75);
+    --third-color: rgb(80, 20, 100);
+    --third-alpha-color: rgba(80, 20, 100, 0.75);
+  
+    --link-color: rgb(80, 158, 227);
+  
+    --bg-color: rgb(245, 245, 245);
+    --bg-alpha-color: rgba(245, 245, 245, 0.75);
+  
+    --navbar-height: 48px;
+  }
+
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+
+/* ********** Reset Styles ********** */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  color: var(--link-color);
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  color: var(--first-color);
+}
+
+/* ********** Bootstrap Styles ********** */
+.navbar-brand img {
+  width: auto;
+  height: var(--navbar-height);
+}
+
+.nav-link {
+  padding-left: 0.5rem !important;
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: var(--first-color) !important;
+}
+
+.nav-link:hover,
+.nav-item:hover .nav-link.dropdown-toggle {
+  color: var(--second-color) !important;
+  background-color: var(--first-alpha-color);
+}
+
+.dropdown-item {
+  color: var(--first-alpha-color);
+  font-weight: bold;
+}
+
+.dropdown-item:hover {
+  color: var(--third-alpha-color);
+}
+
+/* ********** My Styles ********** */
+.bg-second-color {
+  background-color: var(--second-color);
+}
+
+.bg-second-alpha-color {
+  background-color: var(--second-alpha-color);
+}
+
+.bg-third-color {
+  background-color: var(--third-color);
+}
+
+.text-third-color {
+  color: var(--third-color);
+}
+
+.gradient-blue-green {
+  background-color: rgba(83, 184, 152, 1);
+  background-image: linear-gradient(
+    135deg,
+    rgba(47, 145, 224, 0.91),
+    rgba(7, 31, 51, 0.97) 79%
+  );
+  background-image: linear-gradient(
+    131deg,
+    rgba(28, 118, 173, 0.92),
+    rgba(83, 184, 152, 1)
+  );
+}
+
+/* ********** Media Queries ********** */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .nav-link {
+    padding-left: 0 !important;
+  }
+
+  .nav-link:hover,
+  .nav-item:hover .nav-link.dropdown-toggle {
+    background-color: transparent;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
