@@ -1,3 +1,4 @@
+/* ==================Custon propeties===============*/
 :root {
     --first-color: rgb(217, 0, 18);
     --first-alpha-color: rgba(217, 0, 18, 0.75);
@@ -14,7 +15,7 @@
     --navbar-height: 48px;
   }
 
-  
+  /*===========Reset============0*/
   *,
   *:before,
   *:after {
@@ -22,7 +23,7 @@
   }
   
 
-/* ********** Reset Styles ********** */
+/* **********Components ********** */
 html {
   scroll-behavior: smooth;
 }
@@ -40,7 +41,7 @@ a:hover {
   color: var(--first-color);
 }
 
-/* ********** Bootstrap Styles ********** */
+/* ********** Bootstrap Styles ********** 
 .navbar-brand img {
   width: auto;
   height: var(--navbar-height);
@@ -67,7 +68,7 @@ a:hover {
 .dropdown-item:hover {
   color: var(--third-alpha-color);
 }
-
+*/
 /* ********** My Styles ********** */
 .bg-second-color {
   background-color: var(--second-color);
@@ -98,7 +99,7 @@ a:hover {
     rgba(83, 184, 152, 1)
   );
 }
-
+/
 /* ********** Media Queries ********** */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
