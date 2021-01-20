@@ -30,6 +30,7 @@ html {
 
 body {
   font-family: "Raleway", sans-serif;
+
 }
 
 a {
@@ -40,7 +41,53 @@ a {
 a:hover {
   color: var(--first-color);
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 
+nav{
+  background-color: var(--first-alpha-color);
+max-width: 1200px;
+max-height:var(--navbar-height) ;
+display: flex;
+flex-direction: column;
+flex-wrap:wrap ;
+}
+
+ul{
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.container{
+ display:flex;
+}
+
+.logo-container{
+  max-height: var(--navbar-height);
+
+}
+
+.nav-content{
+  display: flex;
+  flex-direction: row;
+}
 /* ********** Bootstrap Styles ********** 
 .navbar-brand img {
   width: auto;
