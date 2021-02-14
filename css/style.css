@@ -48,7 +48,7 @@ img {
 
 nav{
   background-color: var(--first-alpha-color);
-max-width: 1200px;
+
 max-height:var(--navbar-height) ;
 display: flex;
 flex-direction: column;
@@ -77,6 +77,8 @@ li a, .dropbtn {
 
 .container{
  display:flex;
+ margin-left: auto;
+margin-right: auto;
 }
 
 .logo-container{
